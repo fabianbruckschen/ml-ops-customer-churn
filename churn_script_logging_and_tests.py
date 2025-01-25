@@ -20,9 +20,8 @@ from churn_library import (
     feature_importance_plot,
 )
 
-# Configure logging
+# logging configuration
 logging.basicConfig(
-    filename="./logs/churn_library.log",
     level=logging.INFO,
     filemode="w",
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",

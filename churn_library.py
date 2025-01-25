@@ -32,9 +32,10 @@ from sklearn.model_selection import train_test_split, GridSearchCV
 
 # logging configuration
 logging.basicConfig(
+    filename="logs/churn_library.log",
     level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s",
-    filename="logs/churn.log",
+    filemode="w",
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
 )
 
 # setup
